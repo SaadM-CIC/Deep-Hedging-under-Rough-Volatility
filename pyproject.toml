@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "dhrv"
+version = "0.1.0"
+description = "Deep Hedging under Rough Volatility"
+authors = ["Saad"]
+packages = [{ include = "dhrv", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26"
+scipy = "^1.13"
+numba = "^0.60"
+matplotlib = "^3.9"
+torch = "^2.13.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2"
+ruff = "^0.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
