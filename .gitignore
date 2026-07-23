@@ -2,7 +2,6 @@
 __pycache__/
 *.pyc
 checkpoints/
-reports/figures/*
-!reports/figures/.gitkeep
+
 .pytest_cache/
 .ipynb_checkpoints/
